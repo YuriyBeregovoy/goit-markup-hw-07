@@ -122,7 +122,6 @@ button {
 /* -------------The head of the page----------- */
 .logo {
   display: inline-block;
-  margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -164,6 +163,7 @@ button {
   }
   .naw-row {
     display: flex;
+    gap: 120px;
   }
   .site-nav {
     display: flex;
@@ -222,6 +222,9 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .naw-row {
+    gap: 76px;
+  }
   .address-items {
     display: flex;
   }
