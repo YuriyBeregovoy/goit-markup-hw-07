@@ -167,9 +167,43 @@ button {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
+  .close-mobile-menu-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--accent-botton-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+
+    transition: border-color var(--timing-function),
+      background-color var(--timing-function);
+  }
+  .close-mobile-menu-btn:hover,
+  .close-mobile-menu-btn:focus {
+    background-color: var(--pressed-state-color);
+    border-color: transparent;
+  }
+  .close-mobile-menu-icon {
+    transition: fill var(--timing-function);
+  }
+  .close-mobile-menu-btn:hover .close-mobile-menu-icon,
+  .close-mobile-menu-btn:focus .close-mobile-menu-icon {
+    fill: var(--page-background-color);
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-open {
+    display: none;
+  }
+  .close-mobile-menu-btn {
     display: none;
   }
   .naw-row {
