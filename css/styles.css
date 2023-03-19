@@ -101,7 +101,7 @@ button {
 }
 
 /* -------------The head of the page----------- */
-.rows,
+/* .rows,
 .naw-row {
   display: flex;
 }
@@ -177,9 +177,9 @@ button {
 }
 .address {
   margin-left: auto;
-}
+} */
 /*---------------Hero section--------------*/
-.hero {
+/* .hero {
   background-color: var(--title-section-color);
   text-align: center;
   padding: 188px 0;
@@ -232,9 +232,9 @@ button {
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--pressed-state-color);
-}
+} */
 /*--------------Section advantages-------------- */
-.advantages .title {
+/* .advantages .title {
   letter-spacing: 0.02em;
   color: var(--title-section-color);
   margin-bottom: 8px;
@@ -255,10 +255,10 @@ button {
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
-}
+} */
 /*-------------Section activities----Section our team--------------- */
 
-.series {
+/* .series {
   display: flex;
 }
 .activities {
@@ -266,10 +266,10 @@ button {
 }
 .series .item {
   width: calc((100% - 48px) / 3);
-}
+} */
 
 /*-------------Section our team -----------------*/
-.section-team {
+/* .section-team {
   background-color: var(--light-mode-color);
 }
 .team .cards {
@@ -324,9 +324,9 @@ button {
 
 .icon-item {
   background-color: var(--light-mode-color);
-}
+} */
 /*-------------- Customers ----------------*/
-.customers {
+/* .customers {
   padding-top: 130px;
   padding-bottom: 120px;
 }
@@ -365,10 +365,10 @@ button {
 .customers-link:hover .customers-link-icon,
 .customers-link:focus .customers-link-icon {
   fill: var(--pressed-state-color);
-}
+} */
 
 /*---------------Saction Portfolio ---------------- */
-.button-filtr .filtr {
+/* .button-filtr .filtr {
   padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
@@ -457,10 +457,10 @@ button {
 }
 .overlay > p {
   color: var(--light-mode-color);
-}
+} */
 
 /*-----------------Footer---------------- */
-.footer {
+/* .footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--title-section-color);
@@ -523,10 +523,10 @@ button {
 }
 .footer-description {
   margin-right: 120px;
-}
+} */
 /* -----------Footer Subscribe Form ------------ */
 
-.subscribe-form {
+/* .subscribe-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,9 +580,9 @@ button {
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--pressed-state-color);
-}
+} */
 /* -----------Modal window------------ */
-.backdrop {
+/* .backdrop {
   position: fixed;
   z-index: 100;
 
@@ -652,9 +652,9 @@ button {
   letter-spacing: 0.02em;
   color: var(--title-section-color);
   margin-bottom: 16px;
-}
+} */
 /* ---------Modal window input form-----------  */
-.modal-form {
+/* .modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -785,4 +785,4 @@ button {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--pressed-state-color);
-}
+} */
