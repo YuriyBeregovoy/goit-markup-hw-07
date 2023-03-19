@@ -129,7 +129,7 @@ button {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-section-color);
@@ -149,7 +149,7 @@ button {
   border-color: transparent;
   padding: 0;
   width: 32px;
-  height: 32px;
+  height: 70px;
 }
 
 @media screen and (max-width: 767px) {
@@ -182,12 +182,11 @@ button {
   }
   .address-items .link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
     font-style: normal;
     color: var(--body-text-color);
-
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition: color var(--timing-function);
   }
   .link:hover,
@@ -210,17 +209,34 @@ button {
     border-radius: 2px;
     background-color: var(--pressed-state-color);
   }
-  .address-items .item:not(:last-child) {
-    margin-right: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .address-items .item:first-of-type a {
+    padding-top: 16px;
+    padding-bottom: 6px;
   }
-  .address {
-    margin-left: auto;
+  .address-items .item:last-of-type a {
+    padding-bottom: 16px;
+    padding-top: 6px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .address-items {
     display: flex;
+  }
+  .address-items .item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .address {
+    margin-left: auto;
+  }
+  .address-items .link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
