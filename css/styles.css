@@ -171,6 +171,7 @@ button {
   }
   .mobile-menu-container {
     position: relative;
+    padding: 80px 40px 40px 40px;
   }
   .close-mobile-menu-btn {
     position: absolute;
@@ -203,12 +204,15 @@ button {
   .close-mobile-menu-btn:focus .close-mobile-menu-icon {
     fill: var(--page-background-color);
   }
+  .social-networks.mobile-menu-gap {
+    gap: 56px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
   }
-  .close-mobile-menu-btn {
+  .mobile-menu {
     display: none;
   }
   .naw-row {
@@ -384,11 +388,11 @@ button {
 } */
 
 /*-------------Section our team -----------------*/
-/* .section-team {
+.section-team {
   background-color: var(--light-mode-color);
 }
 .team .cards {
-  width: calc((100% - 24px * 3) / 4);
+  /* width: calc((100% - 24px * 3) / 4); */
   background-color: var(--page-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -397,10 +401,6 @@ button {
 
 .section-team .title {
   margin-bottom: 8px;
-}
-.team {
-  display: flex;
-  text-align: center;
 }
 .card-description {
   padding: 32px 16px;
@@ -439,7 +439,19 @@ button {
 
 .icon-item {
   background-color: var(--light-mode-color);
-} */
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    display: flex;
+    text-align: center;
+  }
+  .team .cards {
+    width: calc((100% - 24px * 3) / 4);
+  }
+}
+
 /*-------------- Customers ----------------*/
 /* .customers {
   padding-top: 130px;
