@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 426px;
+    width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -143,69 +143,10 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.mobile-menu-open {
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0;
-  width: 32px;
-  height: 70px;
-}
-
 @media screen and (max-width: 767px) {
   .site-nav,
   .address {
     display: none;
-  }
-  .mobile-menu {
-    display: none;
-
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--page-background-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  }
-  .mobile-menu-container {
-    position: relative;
-    padding: 80px 40px 40px 40px;
-  }
-  .close-mobile-menu-btn {
-    position: absolute;
-    top: 23px;
-    right: 18px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--accent-botton-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-
-    transition: border-color var(--timing-function),
-      background-color var(--timing-function);
-  }
-  .close-mobile-menu-btn:hover,
-  .close-mobile-menu-btn:focus {
-    background-color: var(--pressed-state-color);
-    border-color: transparent;
-  }
-  .close-mobile-menu-icon {
-    transition: fill var(--timing-function);
-  }
-  .close-mobile-menu-btn:hover .close-mobile-menu-icon,
-  .close-mobile-menu-btn:focus .close-mobile-menu-icon {
-    fill: var(--page-background-color);
-  }
-  .social-networks.mobile-menu-gap {
-    gap: 56px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -294,6 +235,90 @@ button {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+}
+
+/* -------------Mobile menu----------- */
+.mobile-menu-open {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  width: 32px;
+  height: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--page-background-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  .mobile-menu-container {
+    position: relative;
+    padding: 80px 40px 40px 40px;
+  }
+  .close-mobile-menu-btn {
+    position: absolute;
+    top: 23px;
+    right: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--accent-botton-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+
+    transition: border-color var(--timing-function),
+      background-color var(--timing-function);
+  }
+  .close-mobile-menu-btn:hover,
+  .close-mobile-menu-btn:focus {
+    background-color: var(--pressed-state-color);
+    border-color: transparent;
+  }
+  .close-mobile-menu-icon {
+    transition: fill var(--timing-function);
+  }
+  .close-mobile-menu-btn:hover .close-mobile-menu-icon,
+  .close-mobile-menu-btn:focus .close-mobile-menu-icon {
+    fill: var(--page-background-color);
+  }
+  .social-networks.mobile-menu-gap {
+    gap: 56px;
+  }
+  .naw-mobile-menu {
+    margin-bottom: 284px;
+  }
+  .mobile-menu-address {
+    margin-bottom: 48px;
+  }
+  .mobile-menu-nav-list .mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mobile-menu-address-list .mobile-menu-address-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mobile-menu-link {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-section-color);
+  }
+  .mobile-menu-link.current {
+    color: var(--pressed-state-color);
   }
 }
 
@@ -411,7 +436,7 @@ button {
 .social-networks {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
 }
