@@ -570,19 +570,19 @@ button {
 }
 
 /*-------------- Customers ----------------*/
-/* .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+
   flex-wrap: wrap;
 }
 .customers-list-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 .customers-link {
@@ -609,7 +609,29 @@ button {
 .customers-link:hover .customers-link-icon,
 .customers-link:focus .customers-link-icon {
   fill: var(--pressed-state-color);
-} */
+}
+@media screen and (max-width: 767px) {
+  .customers-list {
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-list-item {
+    width: 168px;
+    height: 88px;
+  }
+  .customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 
 /*---------------Saction Portfolio ---------------- */
 /* .button-filtr .filtr {
