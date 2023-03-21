@@ -433,16 +433,22 @@ button {
   margin-bottom: 8px;
 } */
 /*-------------Section activities----Section our team--------------- */
-
-/* .series {
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .activities {
+    display: none;
+  }
 }
-.activities {
-  padding-bottom: 120px;
+@media screen and (min-width: 1200px) {
+  .series {
+    display: flex;
+  }
+  .activities {
+    padding-bottom: 120px;
+  }
+  .series .item {
+    width: calc((100% - 48px) / 3);
+  }
 }
-.series .item {
-  width: calc((100% - 48px) / 3);
-} */
 
 /*-------------Section our team -----------------*/
 .section-team {
@@ -515,8 +521,7 @@ button {
     row-gap: 64px;
   }
 }
-@media screen and (max-width: 1199px) {
-}
+
 @media screen and (min-width: 1200px) {
   .team {
     display: flex;
