@@ -410,28 +410,68 @@ button {
   background-color: var(--pressed-state-color);
 } */
 /*--------------Section advantages-------------- */
-/* .advantages .title {
+.advantages .title {
   letter-spacing: 0.02em;
   color: var(--title-section-color);
   margin-bottom: 8px;
 }
+
 .string {
   display: flex;
 }
 .string .item {
-  width: calc((100% - 24px * 3) / 4);
-}
-.advantages-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--light-mode-color);
   width: 100%;
-  height: 112px;
-  border-radius: 4px;
-  margin-bottom: 8px;
-} */
+}
+@media screen and (max-width: 767px) {
+  .string {
+    gap: 72px;
+  }
+
+  .advantages .title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .string .item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages-icon {
+    display: none;
+  }
+  .advantages .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-section-color);
+  }
+  .string p {
+    font-weight: 500;
+  }
+  .string {
+    row-gap: 72px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-mode-color);
+    width: 100%;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .string .item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+}
+
 /*-------------Section activities----Section our team--------------- */
 @media screen and (max-width: 1199px) {
   .activities {
