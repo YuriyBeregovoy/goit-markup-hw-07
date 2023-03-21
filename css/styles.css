@@ -310,7 +310,7 @@ button {
   }
   .social-networks.mobile-menu-gap {
     gap: 56px;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .naw-mobile-menu {
     margin-bottom: 284px;
