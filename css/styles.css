@@ -250,6 +250,15 @@ button {
   width: 32px;
   height: 70px;
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu-address-item .mobile-menu-address-link.size {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -337,7 +346,7 @@ button {
   .mobile-menu-address-item:not(:last-child) {
     margin-bottom: 40px;
   }
-  .mobile-menu-address-item:not(:last-child) a {
+  .mobile-menu-address-link.size {
     display: block;
     font-weight: 700;
     font-size: 36px;
@@ -345,7 +354,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--primary-brand-color);
   }
-  .mobile-menu-address-item:last-child a {
+  .mobile-menu-address-link {
     display: block;
     font-style: normal;
     font-weight: 500;
@@ -364,6 +373,48 @@ button {
 }
 
 /*---------------Hero section--------------*/
+.button-hero {
+  align-items: center;
+  padding: 16px 32px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--page-background-color);
+  background-color: var(--primary-brand-color);
+  letter-spacing: 0.04em;
+
+  border: transparent;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--timing-function);
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--pressed-state-color);
+}
+.hero {
+  background-color: var(--title-section-color);
+  text-align: center;
+  padding: 112px 0;
+
+  background-image: linear-gradient(
+      to bottom,
+      var(--bg-gradient-color),
+      var(--bg-gradient-color)
+    ),
+    url(../images/images-main/people-office\ 1-min.jpg);
+  /* max-width: 428px; */
+  min-height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* .hero {
   background-color: var(--title-section-color);
   text-align: center;
@@ -395,28 +446,7 @@ button {
   color: var(--page-background-color);
   letter-spacing: 0.02em;
 }
-.button-hero {
-  align-items: center;
-  padding: 16px 32px;
 
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  color: var(--page-background-color);
-  background-color: var(--primary-brand-color);
-  letter-spacing: 0.04em;
-
-  border: transparent;
-
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition: background-color var(--timing-function);
-}
-.button-hero:hover,
-.button-hero:focus {
-  background-color: var(--pressed-state-color);
 } */
 /*--------------Section advantages-------------- */
 .advantages .title {
@@ -442,7 +472,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .string .item {
-    width: calc((100% - 24px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
@@ -495,7 +525,7 @@ button {
     padding-bottom: 120px;
   }
   .series .item {
-    width: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 
