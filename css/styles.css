@@ -839,9 +839,7 @@ button {
   height: 40px;
   flex-grow: 1;
 }
-.subscribe {
-  width: 100%;
-}
+/* */
 .subscribe-form-label {
   position: absolute;
 }
@@ -891,16 +889,14 @@ button {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 480px) {
-  .subscribe-form-field {
-    width: 398px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .subscribe-form {
     flex-direction: column;
     gap: 16px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -909,7 +905,24 @@ button {
     margin-right: 24px;
     width: 264px;
   }
+  .container.row {
+    padding-left: 108px;
+  }
 }
+@media screen and (max-width: 1199px) {
+  .container.row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.row {
+    padding-left: 15px;
+  }
+}
+
 /* -----------Modal window------------ */
 /* .backdrop {
   position: fixed;
