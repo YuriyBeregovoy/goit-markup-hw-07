@@ -283,6 +283,7 @@ button {
     display: flex;
     flex-direction: column;
     height: 100%;
+    gap: 40px;
   }
   .close-mobile-menu-btn {
     position: absolute;
