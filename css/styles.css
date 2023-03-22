@@ -283,7 +283,6 @@ button {
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 40px;
   }
   .close-mobile-menu-btn {
     position: absolute;
@@ -320,30 +319,11 @@ button {
     gap: 56px;
     justify-content: center;
   }
-  .mobile-menu-address {
-    margin-bottom: 48px;
-  }
-  .mobile-menu-nav-item:not(:last-child) {
+  .mobile-menu-nav-item {
     margin-bottom: 40px;
-  }
-  .mobile-menu-address-item:not(:last-child) a {
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--primary-brand-color);
-  }
-  .mobile-menu-address-item:last-child a {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--body-text-color);
   }
   .mobile-menu-nav-link {
-    display: inline-block;
+    display: block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -352,6 +332,30 @@ button {
   }
   .mobile-menu-nav-link.current {
     color: var(--pressed-state-color);
+  }
+
+  .mobile-menu-address-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mobile-menu-address-item:not(:last-child) a {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--primary-brand-color);
+  }
+  .mobile-menu-address-item:last-child a {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+  }
+  .mobile-menu-address {
+    margin-bottom: 48px;
   }
   .mobile-menu-address-link {
     display: inline-block;
