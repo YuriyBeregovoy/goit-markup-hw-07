@@ -250,11 +250,11 @@ button {
   width: 32px;
   height: 70px;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 428px) {
   .mobile-menu-address-item .mobile-menu-address-link.size {
     display: block;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
