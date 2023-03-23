@@ -98,7 +98,6 @@ button {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin: 0 auto; */
   outline: 1px solid tomato;
 }
 
@@ -249,10 +248,11 @@ button {
 /* -------------Mobile menu----------- */
 .mobile-menu-open {
   background-color: transparent;
-  border-color: transparent;
+  border: none;
   padding: 0;
+  height: 22px;
   width: 32px;
-  height: 70px;
+  line-height: 0;
 }
 @media screen and (max-width: 428px) {
   .mobile-menu-address-item .mobile-menu-address-link.size {
@@ -299,8 +299,8 @@ button {
   }
   .close-mobile-menu-btn {
     position: absolute;
-    top: 23px;
-    right: 18px;
+    top: 22px;
+    right: 19px;
 
     display: flex;
     justify-content: center;
@@ -336,7 +336,6 @@ button {
     margin-bottom: 40px;
   }
   .mobile-menu-nav-link {
-    display: block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
