@@ -155,12 +155,11 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu-open {
-    display: none;
-  }
+  .mobile-menu-open,
   .mobile-menu {
     display: none;
   }
+
   .naw-row {
     display: flex;
     gap: 120px;
@@ -214,14 +213,12 @@ button {
     flex-direction: column;
     gap: 12px;
   }
-  /* .address-items .item:first-of-type a {
+  .link.email {
     padding-top: 16px;
-    padding-bottom: 6px;
   }
-  .address-items .item:last-of-type a {
+  .link.tel {
     padding-bottom: 16px;
-    padding-top: 6px;
-  } */
+  }
 }
 
 @media screen and (min-width: 1200px) {
