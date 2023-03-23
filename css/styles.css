@@ -244,12 +244,11 @@ button {
 
 /* -------------Mobile menu----------- */
 .mobile-menu-open {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   border-color: transparent;
-  padding: 24px 0;
+  padding: 0;
+  width: 32px;
+  height: 70px;
 }
 @media screen and (max-width: 428px) {
   .mobile-menu-address-item .mobile-menu-address-link.size {
