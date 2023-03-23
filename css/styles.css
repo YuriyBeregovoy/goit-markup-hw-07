@@ -252,7 +252,10 @@ button {
   padding: 0;
   height: 22px;
   width: 32px;
-  line-height: 0;
+}
+.mobile-menu-open-icon {
+  display: block;
+  fill: var(--title-section-color);
 }
 @media screen and (max-width: 428px) {
   .mobile-menu-address-item .mobile-menu-address-link.size {
@@ -322,6 +325,7 @@ button {
     border-color: transparent;
   }
   .close-mobile-menu-icon {
+    display: block;
     transition: fill var(--timing-function);
   }
   .close-mobile-menu-btn:hover .close-mobile-menu-icon,
