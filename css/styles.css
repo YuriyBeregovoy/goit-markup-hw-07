@@ -849,7 +849,6 @@ button {
   position: relative;
   width: 100%;
   height: 40px;
-  flex-grow: 1;
 }
 .subscribe-form-label {
   position: absolute;
@@ -914,7 +913,7 @@ button {
   .subscribe-form-field {
     position: relative;
     margin-right: 24px;
-    width: 264px;
+    min-width: 264px;
   }
   .container.row {
     justify-content: flex-start;
