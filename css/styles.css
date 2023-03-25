@@ -263,7 +263,7 @@ button {
     letter-spacing: 0.02em;
   }
   .contacts-networks-wrapper .social-networks.mobile-menu-gap {
-    gap: 25px;
+    gap: 28px;
     justify-content: flex-start;
   }
 }
