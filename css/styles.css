@@ -423,13 +423,26 @@ button {
       var(--bg-gradient-color),
       var(--bg-gradient-color)
     ),
-    url(../images/images-main/people-office\ 1-min.jpg);
-  min-height: 432px;
+    url(../images/images-bg/Dark-bg-mobile-1x.jpg);
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        var(--bg-gradient-color),
+        var(--bg-gradient-color)
+      ),
+      url(../images/images-bg/Dark-bg-mobile-2x.jpg);
+    background-size: cover;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -439,7 +452,25 @@ button {
     margin-bottom: 36px;
   }
   .hero {
-    min-height: 436px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--bg-gradient-color),
+        var(--bg-gradient-color)
+      ),
+      url(../images/images-bg/Dark-bg-tablet-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          var(--bg-gradient-color),
+          var(--bg-gradient-color)
+        ),
+        url(../images/images-bg/Dark-bg-tablet-2x.jpg);
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -448,7 +479,26 @@ button {
   }
   .hero {
     padding: 188px 0;
-    min-height: 600px;
+
+    background-image: linear-gradient(
+        to bottom,
+        var(--bg-gradient-color),
+        var(--bg-gradient-color)
+      ),
+      url(../images/images-bg/Dark-bg-desktop-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          var(--bg-gradient-color),
+          var(--bg-gradient-color)
+        ),
+        url(../images/images-bg/Dark-bg-desktop-2x.jpg);
+    }
   }
 }
 
