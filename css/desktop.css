@@ -1,0 +1,153 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /* -------------The head of the page----------- */
+  .address {
+    margin-left: auto;
+  }
+  .address-items {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .item .link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
+  /*---------------Hero section--------------*/
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  .hero {
+    padding: 188px 0;
+
+    background-image: linear-gradient(
+        to bottom,
+        var(--bg-gradient-color),
+        var(--bg-gradient-color)
+      ),
+      url(../images/images-bg/Dark-bg-desktop-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          var(--bg-gradient-color),
+          var(--bg-gradient-color)
+        ),
+        url(../images/images-bg/Dark-bg-desktop-2x.jpg);
+    }
+  }
+
+  /*--------------Section advantages-------------- */
+  .advantages-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-mode-color);
+    width: 100%;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .string .item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .advantages .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .string p {
+    font-weight: inherit;
+  }
+
+  /*-------------Section activities----Section our team--------------- */
+  .series {
+    display: flex;
+  }
+  .activities {
+    padding-bottom: 120px;
+  }
+  .series .item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .string {
+    flex-wrap: nowrap;
+  }
+
+  /*-------------- Customers ----------------*/
+  .section-padding-column {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list-item {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+  }
+
+  /*---------------Saction Portfolio ---------------- */
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .button-filtr {
+    margin-bottom: 72px;
+  }
+  .projects {
+    row-gap: 40px;
+  }
+  .projects .card {
+    width: calc((100% - 48px) / 3);
+  }
+  /*-----------------Footer---------------- */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-description {
+    margin-right: 120px;
+  }
+  .footer .text {
+    max-width: 264px;
+  }
+  .aside {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .text-item-foter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--page-background-color);
+  }
+  .footer-social {
+    margin-right: 80px;
+  }
+  .section-padiing-row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* -----------Footer Subscribe Form ------------ */
+  .container.row {
+    column-gap: 0;
+  }
+  /* -----------Modal window------------ */
+  .modal {
+    max-width: 408px;
+    height: 584px;
+  }
+}

@@ -98,7 +98,6 @@ button {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
 }
 
 @media screen and (min-width: 480px) {
@@ -110,27 +109,6 @@ button {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-padiing-row {
-    padding-left: 108px;
-    padding-right: 108px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1158px;
-  }
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
 /* -------------The head of the page----------- */
 .logo {
   display: inline-block;
@@ -161,89 +139,6 @@ button {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .mobile-menu-open,
-  .mobile-menu {
-    display: none;
-  }
-
-  .naw-row {
-    display: flex;
-    gap: 120px;
-  }
-  .site-nav {
-    display: flex;
-    gap: 40px;
-  }
-  .site-nav .link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--title-section-color);
-
-    transition: color var(--timing-function);
-  }
-  .address-items .link {
-    display: block;
-    font-style: normal;
-    color: var(--body-text-color);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    transition: color var(--timing-function);
-  }
-  .link:hover,
-  .link:focus {
-    color: var(--pressed-state-color);
-  }
-  .link.current {
-    position: relative;
-    color: var(--pressed-state-color);
-  }
-  .link.current::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--pressed-state-color);
-  }
-  .address-items {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .link.email {
-    padding-top: 16px;
-  }
-  .link.tel {
-    padding-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-left: auto;
-  }
-  .address-items {
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .item .link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-  }
-}
-
 /* -------------Mobile menu----------- */
 .mobile-menu-open {
   background-color: transparent;
@@ -444,64 +339,6 @@ button {
     background-size: cover;
   }
 }
-@media screen and (min-width: 768px) {
-  .hero-title {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        var(--bg-gradient-color),
-        var(--bg-gradient-color)
-      ),
-      url(../images/images-bg/Dark-bg-tablet-1x.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to bottom,
-          var(--bg-gradient-color),
-          var(--bg-gradient-color)
-        ),
-        url(../images/images-bg/Dark-bg-tablet-2x.jpg);
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-title {
-    margin-bottom: 48px;
-  }
-  .hero {
-    padding: 188px 0;
-
-    background-image: linear-gradient(
-        to bottom,
-        var(--bg-gradient-color),
-        var(--bg-gradient-color)
-      ),
-      url(../images/images-bg/Dark-bg-desktop-1x.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to bottom,
-          var(--bg-gradient-color),
-          var(--bg-gradient-color)
-        ),
-        url(../images/images-bg/Dark-bg-desktop-2x.jpg);
-    }
-  }
-}
-
 /*--------------Section advantages-------------- */
 .advantages .title {
   font-weight: 700;
@@ -529,43 +366,8 @@ button {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .string .item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--light-mode-color);
-    width: 100%;
-    height: 112px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-  }
-  .string .item {
-    width: calc((100% - 3 * 24px) / 4);
-  }
-  .advantages .title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .string p {
-    font-weight: inherit;
-  }
-}
-
 /*-------------Section activities----Section our team--------------- */
-@media screen and (max-width: 1199px) {
-  .activities {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .series {
     display: flex;
@@ -642,12 +444,6 @@ button {
   background-color: var(--light-mode-color);
 }
 
-@media screen and (min-width: 768px) {
-  .team {
-    row-gap: 64px;
-  }
-}
-
 /*-------------- Customers ----------------*/
 
 .customers-list {
@@ -685,27 +481,6 @@ button {
 .customers-link:focus .customers-link-icon {
   fill: var(--pressed-state-color);
 }
-
-@media screen and (min-width: 768px) {
-  .customers-list-item {
-    flex-basis: calc((100% - 2 * 24px) / 3);
-  }
-  .customers-list {
-    column-gap: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-padding-column {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
-  .customers-list-item {
-    flex-basis: calc((100% - 5 * 24px) / 6);
-  }
-}
-
 /*---------------Saction Portfolio ---------------- */
 .portfolio {
   padding-top: 48px;
@@ -801,38 +576,6 @@ button {
 .overlay > p {
   color: var(--light-mode-color);
 }
-/* @media screen and (min-width: 480px) {
-} */
-@media screen and (min-width: 768px) {
-  .projects {
-    column-gap: 24px;
-    row-gap: 72px;
-    justify-content: flex-start;
-  }
-  .projects .card {
-    width: calc((100% - 24px) / 2);
-  }
-  .button-filtr {
-    margin-bottom: 64px;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    padding-top: 100px;
-    padding-bottom: 120px;
-  }
-  .button-filtr {
-    margin-bottom: 72px;
-  }
-  .projects {
-    row-gap: 40px;
-  }
-  .projects .card {
-    width: calc((100% - 48px) / 3);
-  }
-}
-
 /*-----------------Footer---------------- */
 .footer {
   background-color: var(--title-section-color);
@@ -871,7 +614,7 @@ button {
 
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-brand-color);
   border-radius: 50%;
   border-color: transparent;
 
@@ -898,32 +641,6 @@ button {
   .logo.aside {
     display: block;
     text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .footer-description {
-    margin-right: 120px;
-  }
-  .footer .text {
-    max-width: 264px;
-  }
-  .aside {
-    margin-right: 0;
-    margin-bottom: 16px;
-  }
-  .text-item-foter {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--page-background-color);
-  }
-  .footer-social {
-    margin-right: 80px;
   }
 }
 
@@ -992,22 +709,6 @@ button {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
-  .subscribe-form-field {
-    position: relative;
-    margin-right: 24px;
-    min-width: 264px;
-  }
-  .container.row {
-    justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container.row {
-    column-gap: 0;
-  }
-}
-
 /* -----------Modal window------------ */
 .backdrop {
   position: fixed;
@@ -1087,20 +788,6 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    max-width: 408px;
-    height: 586px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    max-width: 408px;
-    height: 584px;
-  }
-}
 /* ---------Modal window input form-----------  */
 .modal-form {
   display: flex;
