@@ -353,10 +353,8 @@ button {
 .advantages-icon {
   display: none;
 }
-@media screen and (max-width: 767px) {
-  .advantages .title {
-    text-align: center;
-  }
+.advantages .title {
+  text-align: center;
 }
 /*-------------Section our team -----------------*/
 .section-team {
@@ -606,17 +604,13 @@ button {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
-  .container.row {
-    flex-direction: column;
-  }
-  .text-item-foter {
-    text-align: center;
-  }
-  .logo.aside {
-    display: block;
-    text-align: center;
-  }
+
+.text-item-foter {
+  text-align: center;
+}
+.logo.aside {
+  display: block;
+  text-align: center;
 }
 
 /* -----------Footer Subscribe Form ------------ */
@@ -675,14 +669,12 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .subscribe-form {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .subscribe {
-    width: 100%;
-  }
+.subscribe-form {
+  flex-direction: column;
+  gap: 16px;
+}
+.subscribe {
+  width: 100%;
 }
 /* -----------Modal window------------ */
 .backdrop {

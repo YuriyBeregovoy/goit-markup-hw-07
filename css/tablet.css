@@ -135,7 +135,11 @@
     margin-bottom: 64px;
     justify-content: center;
   }
-
+  /*-----------------Footer---------------- */
+  .text-item-foter,
+  .logo.aside {
+    text-align: unset;
+  }
   /* -----------Footer Subscribe Form ------------ */
   .subscribe-form-field {
     position: relative;
@@ -144,6 +148,13 @@
   }
   .container.row {
     justify-content: flex-start;
+  }
+  .subscribe-form {
+    flex-direction: unset;
+    gap: 0;
+  }
+  .subscribe {
+    width: unset;
   }
 
   /* -----------Modal window------------ */
