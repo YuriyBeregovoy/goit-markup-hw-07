@@ -1,3 +1,27 @@
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        var(--bg-gradient-color),
+        var(--bg-gradient-color)
+      ),
+      url(../images/images-bg/Dark-bg-tablet-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          var(--bg-gradient-color),
+          var(--bg-gradient-color)
+        ),
+        url(../images/images-bg/Dark-bg-tablet-2x.jpg);
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -15,6 +39,9 @@
   .naw-row {
     display: flex;
     gap: 120px;
+  }
+  .address {
+    display: unset;
   }
   .site-nav {
     display: flex;
@@ -77,27 +104,6 @@
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
-  }
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        var(--bg-gradient-color),
-        var(--bg-gradient-color)
-      ),
-      url(../images/images-bg/Dark-bg-tablet-1x.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          to bottom,
-          var(--bg-gradient-color),
-          var(--bg-gradient-color)
-        ),
-        url(../images/images-bg/Dark-bg-tablet-2x.jpg);
-    }
   }
 
   /*--------------Section advantages-------------- */

@@ -96,19 +96,13 @@ button {
 
 .container {
   width: 100%;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 /* -------------The head of the page----------- */
 .logo {
   display: inline-block;
@@ -133,12 +127,11 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
-  .site-nav,
-  .address {
-    display: none;
-  }
+.site-nav,
+.address {
+  display: none;
 }
+
 /* -------------Mobile menu----------- */
 .mobile-menu-open {
   background-color: transparent;
@@ -163,113 +156,111 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .mobile-menu {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: var(--page-background-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity var(--timing-function),
-      visibility var(--timing-function);
-  }
+.mobile-menu {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background-color: var(--page-background-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--timing-function), visibility var(--timing-function);
+}
 
-  .contacts-networks-wrapper {
-    margin-top: auto;
-  }
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .mobile-menu-container {
-    position: relative;
-    padding: 80px 35px 40px 40px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .close-mobile-menu-btn {
-    position: absolute;
-    top: 22px;
-    right: 19px;
+.contacts-networks-wrapper {
+  margin-top: auto;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+  position: relative;
+  padding: 80px 35px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.close-mobile-menu-btn {
+  position: absolute;
+  top: 22px;
+  right: 19px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--accent-botton-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent-botton-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
 
-    transition: border-color var(--timing-function),
-      background-color var(--timing-function);
-  }
-  .close-mobile-menu-btn:hover,
-  .close-mobile-menu-btn:focus {
-    background-color: var(--pressed-state-color);
-    border-color: transparent;
-  }
-  .close-mobile-menu-icon {
-    transition: fill var(--timing-function);
-  }
-  .close-mobile-menu-btn:hover .close-mobile-menu-icon,
-  .close-mobile-menu-btn:focus .close-mobile-menu-icon {
-    fill: var(--page-background-color);
-  }
-  .social-networks.mobile-menu-gap {
-    gap: 56px;
-    justify-content: flex-start;
-  }
-  .mobile-menu-nav-item {
-    margin-bottom: 40px;
-  }
-  .mobile-menu-nav-link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--title-section-color);
-  }
-  .mobile-menu-nav-link.current {
-    color: var(--pressed-state-color);
-  }
+  transition: border-color var(--timing-function),
+    background-color var(--timing-function);
+}
+.close-mobile-menu-btn:hover,
+.close-mobile-menu-btn:focus {
+  background-color: var(--pressed-state-color);
+  border-color: transparent;
+}
+.close-mobile-menu-icon {
+  transition: fill var(--timing-function);
+}
+.close-mobile-menu-btn:hover .close-mobile-menu-icon,
+.close-mobile-menu-btn:focus .close-mobile-menu-icon {
+  fill: var(--page-background-color);
+}
+.social-networks.mobile-menu-gap {
+  gap: 56px;
+  justify-content: flex-start;
+}
+.mobile-menu-nav-item {
+  margin-bottom: 40px;
+}
+.mobile-menu-nav-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--title-section-color);
+}
+.mobile-menu-nav-link.current {
+  color: var(--pressed-state-color);
+}
 
-  .mobile-menu-address-item:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  .mobile-menu-address-link.size {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--primary-brand-color);
-  }
-  .mobile-menu-address-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--body-text-color);
-  }
-  .mobile-menu-address {
-    margin-bottom: 48px;
-  }
-  .mobile-menu-address-link {
-    display: inline-block;
-    font-style: normal;
-  }
+.mobile-menu-address-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-address-link.size {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--primary-brand-color);
+}
+.mobile-menu-address-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
+.mobile-menu-address {
+  margin-bottom: 48px;
+}
+.mobile-menu-address-link {
+  display: inline-block;
+  font-style: normal;
 }
 
 /*---------------Hero section--------------*/
@@ -339,6 +330,7 @@ button {
     background-size: cover;
   }
 }
+
 /*--------------Section advantages-------------- */
 .advantages .title {
   font-weight: 700;
@@ -366,23 +358,6 @@ button {
     text-align: center;
   }
 }
-/*-------------Section activities----Section our team--------------- */
-
-@media screen and (min-width: 1200px) {
-  .series {
-    display: flex;
-  }
-  .activities {
-    padding-bottom: 120px;
-  }
-  .series .item {
-    flex-basis: calc((100% - 48px) / 3);
-  }
-  .string {
-    flex-wrap: nowrap;
-  }
-}
-
 /*-------------Section our team -----------------*/
 .section-team {
   background-color: var(--light-mode-color);
