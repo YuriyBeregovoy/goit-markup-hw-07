@@ -696,16 +696,16 @@ button {
   pointer-events: none;
 }
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   width: calc(100% - 2 * 15px);
   min-height: 586px;
   background-color: var(--bg-modal-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 15px 24px 15px;
 }
@@ -752,7 +752,6 @@ button {
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 392px;
-    min-height: 586px;
   }
 }
 
